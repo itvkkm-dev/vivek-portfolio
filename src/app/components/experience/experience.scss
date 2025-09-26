@@ -1,0 +1,120 @@
+/* Base styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: auto;
+  background: white; /* Ensure no background artifacts */
+  border: none;
+}
+
+/* Container for the experience section */
+.experience-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px 20px; /* Removed top padding */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Start from the top */
+  min-height: 80vh;
+  border: none; /* Prevent any line */
+}
+
+/* Title style */
+
+.experience-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.8rem;
+  color: #2b6cb0;
+}
+
+.experience-title i {
+  font-size: 2rem; /* Optional: reduce icon size to match the smaller heading */
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+/* Experience card style */
+.experience-card {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 15px;
+  padding: 40px 50px;
+  box-sizing: border-box;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
+  border: none;
+}
+
+/* Header section in card */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Date on the right */
+.date {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #d3d0ff;
+  white-space: nowrap;
+}
+
+/* Responsibilities list */
+.responsibilities {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #e0dbff;
+}
+
+/* Spacing between list items */
+.responsibilities li {
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .experience-container {
+    padding: 0 15px 20px; /* Removed top padding */
+  }
+
+  .experience-title {
+    font-size: 1.4rem;
+    margin: 0 0 30px; /* No top margin */
+  }
+
+  .experience-title i {
+    font-size: 1.4rem;
+  }
+
+  .experience-card {
+    padding: 30px 25px;
+    width: 100%;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .date {
+    margin-top: 10px;
+  }
+}

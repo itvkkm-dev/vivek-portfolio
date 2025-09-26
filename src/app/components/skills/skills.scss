@@ -1,0 +1,147 @@
+/* Section container - page background removed */
+.about-section {
+  width: 100%;
+  min-height: 100vh;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin-top: 3rem;
+  padding: 0 1rem 3rem 1rem;
+}
+
+/* Container wrapper */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Skills Section Title */
+.skills-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2b6cb0;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Skill Card - shadows & hover removed, background retained */
+.skill-card {
+  color: #fff;
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Skill Icon */
+.skill-icon {
+  font-size: 2.8rem;
+  margin-bottom: 0.9rem;
+  filter: none;
+  transition: none;
+}
+
+/* Remove icon hover effect */
+.skill-card:hover .skill-icon {
+  filter: none;
+}
+
+/* Card Title */
+.skill-card h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-shadow: none;
+  user-select: none;
+}
+
+/* ✅ Keep these color backgrounds */
+.bg-primary {
+  background: linear-gradient(135deg, #dd0031, #a70020);
+}
+.bg-info {
+  background: linear-gradient(135deg, #3178c6, #1f4f7c);
+}
+.bg-success {
+  background: linear-gradient(135deg, #198754, #0f5235);
+}
+.bg-danger {
+  background: linear-gradient(135deg, #dc3545, #8e1d29);
+}
+.bg-warning {
+  background: linear-gradient(135deg, #ffc107, #b28600);
+  color: #212529 !important;
+}
+.bg-secondary {
+  background: linear-gradient(135deg, #6c757d, #495057);
+  color: #fff;
+}
+.bg-dark {
+  background: linear-gradient(135deg, #212529, #121212);
+  color: #fff;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .skill-card {
+    padding: 1.3rem 1rem;
+  }
+
+  .skill-icon {
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .skill-card h5 {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 640px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .skills-title {
+    font-size: 1.3rem;
+  }
+
+  .skill-card {
+    padding: 1rem 0.8rem;
+  }
+
+  .skill-icon {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .skill-card h5 {
+    font-size: 0.95rem;
+  }
+
+  .about-section {
+    margin-top: 2rem; /* smaller margin on mobile */
+  }
+}

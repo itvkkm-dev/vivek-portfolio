@@ -1,0 +1,36 @@
+<header class="app-header">
+    <!-- Username Section -->
+    <div class="username">
+        <i class="fas fa-user-circle"></i>
+        <span>Vivek Kumar</span>
+    </div>
+
+    <!-- Hamburger Toggle -->
+    <div class="hamburger" (click)="toggleMenu()">
+        <i class="fas" [ngClass]="menuOpen ? 'fa-times' : 'fa-bars'"></i>
+    </div>
+
+    <!-- Dropdown Menu -->
+    <nav class="menu" [class.open]="menuOpen">
+        <ul>
+            <li [class.active]="activeSection === 'hero'" (click)="scrollTo('hero')">
+                <i class="fas fa-home"></i> Home
+            </li>
+            <li [class.active]="activeSection === 'about'" (click)="scrollTo('about')">
+                <i class="fas fa-user"></i> About
+            </li>
+            <li [class.active]="activeSection === 'skills'" (click)="scrollTo('skills')">
+                <i class="fas fa-cogs"></i> Skills
+            </li>
+            <li [class.active]="activeSection === 'experience'" (click)="scrollTo('experience')">
+                <i class="fas fa-briefcase"></i> Experience
+            </li>
+            <li [class.active]="activeSection === 'projects'" (click)="scrollTo('projects')">
+                <i class="fas fa-project-diagram"></i> Projects
+            </li>
+            <li [class.active]="activeSection === 'contact'" (click)="scrollTo('contact')">
+                <i class="fas fa-envelope"></i> Contact
+            </li>
+        </ul>
+    </nav>
+</header>
