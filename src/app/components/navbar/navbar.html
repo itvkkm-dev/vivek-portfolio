@@ -5,12 +5,12 @@
         <span>Vivek Kumar</span>
     </div>
 
-    <!-- Hamburger Toggle -->
+    <!-- Hamburger Toggle (only visible on small screens) -->
     <div class="hamburger" (click)="toggleMenu()">
         <i class="fas" [ngClass]="menuOpen ? 'fa-times' : 'fa-bars'"></i>
     </div>
 
-    <!-- Dropdown Menu -->
+    <!-- Nav Menu (responsive) -->
     <nav class="menu" [class.open]="menuOpen">
         <ul>
             <li [class.active]="activeSection === 'hero'" (click)="scrollTo('hero')">

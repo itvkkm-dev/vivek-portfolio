@@ -1,4 +1,6 @@
-/* Header Styling */
+/* ===================== */
+/* Base Header Styling   */
+/* ===================== */
 .app-header {
   display: flex;
   justify-content: space-between;
@@ -9,9 +11,12 @@
   position: relative;
   z-index: 100;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
 }
 
-/* Username Display */
+/* ===================== */
+/* Username Section      */
+/* ===================== */
 .username {
   display: flex;
   align-items: center;
@@ -23,7 +28,9 @@
   font-size: 1.5rem;
 }
 
-/* Hamburger */
+/* ===================== */
+/* Hamburger Icon        */
+/* ===================== */
 .hamburger {
   font-size: 1.6rem;
   cursor: pointer;
@@ -35,7 +42,9 @@
   transform: scale(1.1);
 }
 
-/* Dropdown Menu */
+/* ===================== */
+/* Dropdown Menu (Mobile)
+/* ===================== */
 .menu {
   position: absolute;
   top: 100%;
@@ -48,7 +57,8 @@
   max-height: 0;
   transition: all 0.3s ease;
   pointer-events: none;
-  z-index: 100; /* make sure menu overlays content */
+  z-index: 100;
+  opacity: 0;
 }
 
 .menu.open {
@@ -73,11 +83,73 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Active link */
+.menu li:hover {
+  background-color: #2a2a2a;
+  color: #fff;
+}
 
+/* ===================== */
+/* Active Link Styling   */
+/* ===================== */
 .menu li.active {
   color: #4ea8ff;
   border-radius: 2px;
   font-weight: bold;
-  border-right: 4px solid #4ea8ff; /* Right border to highlight the active item */
+  border-right: 4px solid #4ea8ff;
+}
+
+/* =============================== */
+/* Desktop Layout - Screens ≥ 1024px */
+/* =============================== */
+@media (min-width: 1024px) {
+  /* Hide hamburger on desktop */
+  .hamburger {
+    display: none;
+  }
+
+  /* Make menu visible and horizontal */
+  .menu {
+    position: static;
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    max-height: none;
+    opacity: 1;
+    pointer-events: auto;
+    margin-left: auto;
+    padding-top: 0;
+  }
+
+  .menu ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .menu ul::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+
+  .menu li {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    white-space: nowrap; /* Prevent text wrap */
+  }
+
+  .menu li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .menu li.active {
+    border: none;
+    border-bottom: 2px solid #4ea8ff;
+    font-weight: bold;
+    color: #4ea8ff;
+  }
 }
