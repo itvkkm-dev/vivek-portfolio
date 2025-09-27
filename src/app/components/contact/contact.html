@@ -23,37 +23,42 @@
 
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate class="contact-form" data-aos="fade-up"
             data-aos-delay="400">
+
+            <!-- Name Field -->
             <div class="form-group" data-aos="fade-right" data-aos-delay="450">
-                <input type="text" formControlName="name" placeholder="Full Name" />
+                <input type="text" formControlName="name" placeholder="Full Name*" />
                 <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid" class="error-msg">
                     Name is <strong>required</strong>.
                 </div>
             </div>
 
+            <!-- Subject Field -->
             <div class="form-group" data-aos="fade-right" data-aos-delay="500">
-                <input type="text" formControlName="subject" placeholder="Subject" />
+                <input type="text" formControlName="subject" placeholder="Subject*" />
                 <div *ngIf="contactForm.get('subject')?.touched && contactForm.get('subject')?.invalid"
                     class="error-msg">
                     Subject is <strong>required</strong>.
                 </div>
             </div>
 
+            <!-- Message Field -->
             <div class="form-group" data-aos="fade-right" data-aos-delay="550">
-                <textarea formControlName="message" placeholder="Your Message" rows="5"></textarea>
+                <textarea formControlName="message" placeholder="Your Message*" rows="5"></textarea>
                 <div *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid"
                     class="error-msg">
                     Message is <strong>required</strong>.
                 </div>
             </div>
 
-            <button type="submit" [disabled]="contactForm.invalid" class="submit-btn" data-aos="zoom-in"
-                data-aos-delay="600">
+            <!-- Submit Button -->
+            <button type="submit" [disabled]="contactForm.invalid" class="submit-btn">
                 <i class="fas fa-envelope"></i>
                 <span>Send Email</span>
             </button>
         </form>
     </div>
 </div>
+
 <footer class="footer" data-aos-delay="700">
     <div class="footer-content">
         <p>

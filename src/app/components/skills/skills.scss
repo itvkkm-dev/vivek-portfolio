@@ -145,3 +145,11 @@
     margin-top: 2rem; /* smaller margin on mobile */
   }
 }
+
+/* ✅ Reduce bottom padding for iPad Pro (11" and 12.9", portrait & landscape) */
+@media (min-width: 834px) and (max-width: 1366px) and (orientation: portrait),
+  (min-width: 1194px) and (max-width: 1366px) and (orientation: landscape) {
+  .about-section {
+    margin-bottom: 0px !important;
+  }
+}

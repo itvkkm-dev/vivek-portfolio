@@ -1,21 +1,22 @@
-/* Full-width section with no background or padding */
+/* ==================== Base Styles ==================== */
+
 .about-section {
   color: #f1f1f1;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
-  min-height: 100vh;
   box-sizing: border-box;
-  margin-top: 2rem; /* ✅ Add top spacing here */
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  /* Remove forced min-height for natural flow */
 }
 
-/* Full-width container, centered content */
+/* Full-width container */
 .container {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
 }
 
-/* Section title */
 .section-title {
   font-size: 1.8rem;
   font-weight: 600;
@@ -25,17 +26,15 @@
 }
 
 .section-title i {
-  font-size: 25px; /* or any smaller size you prefer */
+  font-size: 25px;
 }
 
-/* Inner content box (still limited for readability) */
 .about-content {
   max-width: 650px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-/* Text block */
 .about-text {
   font-size: 1.1rem;
   line-height: 1.9;
@@ -45,7 +44,6 @@
   animation: fadeIn 1s ease;
 }
 
-/* Contact Info */
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -54,7 +52,6 @@
   animation: fadeInUp 1s ease;
 }
 
-/* Contact Item - hover effect removed */
 .contact-item {
   display: flex;
   align-items: center;
@@ -62,32 +59,84 @@
   color: #ddd;
 }
 
-/* Font Awesome Icons */
 .contact-icon {
   font-size: 1.3rem;
   margin-right: 0.8rem;
   color: #dd0031;
 }
 
-/* Responsive */
+/* ==================== Responsive ==================== */
+
+/* Mobile (up to 600px) */
 @media (max-width: 600px) {
   .section-title {
     font-size: 1.3rem;
   }
-
   .about-content {
     padding: 0 0.5rem;
   }
-
   .about-text {
     font-size: 1rem;
   }
-
   .contact-item {
     font-size: 1rem;
   }
-
   .contact-icon {
     font-size: 1.1rem;
+  }
+}
+
+/* Small tablets / iPad Mini (601px to 699px) */
+@media (min-width: 601px) and (max-width: 699px) {
+  .about-content {
+    max-width: 600px;
+    padding: 0 1rem;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* iPad Air approx resolution 1024x1066 (landscape) */
+@media only screen and (min-width: 1000px) and (max-width: 1050px) and (min-height: 1000px) and (max-height: 1100px) {
+  .about-content {
+    max-width: 700px;
+    padding: 0 1rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Tablets and small laptops (700px to 900px) */
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  .about-content {
+    max-width: 600px;
+    padding: 0 1rem;
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Larger tablets / small laptops (901px to 1024px) */
+@media (min-width: 901px) and (max-width: 1024px) {
+  .about-content {
+    max-width: 700px;
+    padding: 0 1rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* Desktop & large laptops (1025px and above) */
+@media (min-width: 1025px) {
+  .about-content {
+    max-width: 800px;
+    padding: 0 1rem;
+  }
+  .section-title {
+    font-size: 2.2rem;
   }
 }
