@@ -8,35 +8,42 @@
 /* Full-page layout and centering */
 html,
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #667eea, #764ba2);
+  padding-bottom: 6rem; /* space below */
 }
 
+/* Container for the profile card */
 .profile-container {
-  height: auto;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align top */
+  align-items: flex-start;
   padding: 1rem;
-  margin-top: 3rem;
+  margin: 3rem auto 4rem;
+  max-width: 100%;
+  width: 100%;
 }
 
-/* Glass card */
+/* Glass card - height auto to fit content */
 .glass-card {
   background: linear-gradient(135deg, #1f1f2e, #3b2c74, #2b6cb0);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-radius: 16px;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 3rem; /* extra bottom padding for button */
   width: 100%;
   max-width: 280px;
-  aspect-ratio: 1 / 1;
+  /* Remove aspect-ratio to allow height auto */
+  box-sizing: border-box;
   text-align: center;
   color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Avatar image */
+/* Avatar image wrapper */
 .avatar-ring {
   padding: 5px;
   border-radius: 50%;
@@ -44,6 +51,7 @@ body {
   margin-bottom: 1rem;
 }
 
+/* Profile image */
 .profile-img {
   width: 100px;
   height: 100px;
@@ -76,8 +84,7 @@ body {
 
 /* Download Button */
 .download-btn {
-  display: inline-block;
-  margin-top: 2rem;
+  margin-top: 1.8rem; /* push button to bottom */
   padding: 0.5rem 1.2rem;
   border: 1px solid white;
   color: white;
@@ -86,18 +93,18 @@ body {
   font-weight: 500;
   border-radius: 6px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 /* ======================== */
 /* Responsive Breakpoints */
 /* ======================== */
 
-/* Extra small phones (iPhone SE 1st gen, small Android phones) */
-/* width <= 320px */
+/* Extra small phones (width <= 320px) */
 @media (max-width: 320px) {
   .glass-card {
     max-width: 240px;
-    padding: 1rem;
+    padding: 1rem 1rem 2.5rem;
   }
   .profile-img {
     width: 80px;
@@ -118,12 +125,11 @@ body {
   }
 }
 
-/* Small phones (iPhone SE 2nd gen, iPhone 8, small Android phones) */
-/* width 321px to 375px */
+/* Small phones (321px to 375px) */
 @media (min-width: 321px) and (max-width: 375px) {
   .glass-card {
     max-width: 260px;
-    padding: 1.1rem;
+    padding: 1.1rem 1.1rem 2.8rem;
   }
   .profile-img {
     width: 90px;
@@ -144,12 +150,11 @@ body {
   }
 }
 
-/* Medium phones (iPhone 12, 13 Mini, Pixel 4a) */
-/* width 376px to 414px */
+/* Medium phones (376px to 414px) */
 @media (min-width: 376px) and (max-width: 414px) {
   .glass-card {
     max-width: 280px;
-    padding: 1.3rem;
+    padding: 1.3rem 1.3rem 3rem;
   }
   .profile-img {
     width: 95px;
@@ -170,12 +175,11 @@ body {
   }
 }
 
-/* Large phones (iPhone 12/13/14 Pro Max, Galaxy S20/S21+) */
-/* width 415px to 480px */
+/* Large phones (415px to 480px) */
 @media (min-width: 415px) and (max-width: 480px) {
   .glass-card {
     max-width: 300px;
-    padding: 1.4rem;
+    padding: 1.4rem 1.4rem 3.2rem;
   }
   .profile-img {
     width: 100px;
@@ -196,12 +200,11 @@ body {
   }
 }
 
-/* Small tablets and large phones in landscape */
-/* width 481px to 767px */
+/* Small tablets and large phones in landscape (481px to 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
   .glass-card {
     max-width: 320px;
-    padding: 1.5rem 1.8rem;
+    padding: 1.5rem 1.8rem 3.5rem;
   }
   .profile-img {
     width: 105px;
@@ -222,12 +225,11 @@ body {
   }
 }
 
-/* Tablets (iPad Mini, iPad Air, iPad Pro 11") */
-/* width 768px to 1023px */
+/* Tablets (768px to 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
   .glass-card {
     max-width: 350px;
-    padding: 2rem;
+    padding: 2rem 2rem 4rem;
   }
   .profile-img {
     width: 110px;
@@ -248,12 +250,11 @@ body {
   }
 }
 
-/* Small laptops and desktops */
-/* width 1024px to 1439px */
+/* Small laptops and desktops (1024px to 1439px) */
 @media (min-width: 1024px) and (max-width: 1439px) {
   .glass-card {
     max-width: 400px;
-    padding: 2.5rem;
+    padding: 2.5rem 2.5rem 5rem;
   }
   .profile-img {
     width: 120px;
@@ -274,12 +275,11 @@ body {
   }
 }
 
-/* Large desktops and 4k */
-/* width 1440px and above */
+/* Large desktops and 4k (1440px and above) */
 @media (min-width: 1440px) {
   .glass-card {
     max-width: 450px;
-    padding: 3rem;
+    padding: 3rem 3rem 6rem;
   }
   .profile-img {
     width: 130px;
