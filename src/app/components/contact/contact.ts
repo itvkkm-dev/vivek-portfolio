@@ -39,7 +39,6 @@ export class Contact {
       const message = this.contactForm.value.message;
 
       const body = encodeURIComponent(`Name: ${name}\n\nMessage: ${message}`);
-      const to = 'it.vkkm@gmail.com';
 
       const mailtoUrl = `mailto:it.vkkm@gmail.com?subject=${subject}&body=${body}`;
       window.location.href = mailtoUrl;
