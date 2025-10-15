@@ -14,4 +14,15 @@
             <i class="fas fa-download me-2"></i> Download Resume
         </a>
     </div>
+    <!-- Scroll Down Button -->
+    <button *ngIf="showScrollDownButton" class="scroll-down-btn" (click)="scrollToSection('about')" title="Scroll Down">
+        <i class="fas fa-chevron-down"></i>
+        <span>Scroll Down</span>
+    </button>
+
+    <!-- Scroll To Top Button -->
+    <button *ngIf="showScrollToTopButton" class="scroll-to-top-btn" (click)="scrollToTop()" title="Scroll To Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
 </div>
