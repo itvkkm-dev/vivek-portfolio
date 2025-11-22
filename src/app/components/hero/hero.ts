@@ -45,13 +45,20 @@ export class Hero implements OnInit, AfterViewInit {
 
   downloadResume(): void {
     const url = 'assets/images/Vivek Resume.pdf';
-    const newTab = window.open(url, '_blank');
 
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'Vivek Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      window.open(url, '_blank'); // just open PDF
+    } else {
+      // desktop download + open
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'Vivek Resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.open(url, '_blank');
+    }
   }
 }
