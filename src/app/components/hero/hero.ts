@@ -1,16 +1,22 @@
 import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ToastModule, ButtonModule],
+  providers: [MessageService],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })
 export class Hero implements OnInit, AfterViewInit {
   showScrollDownButton: boolean = true;
   showScrollToTopButton: boolean = false;
+
+  constructor(private messageService: MessageService) {}
 
   ngOnInit(): void {
     window.scrollTo({ top: 0 });
@@ -33,10 +39,19 @@ export class Hero implements OnInit, AfterViewInit {
   onWindowScroll(): void {
     const scrollY = window.scrollY || document.documentElement.scrollTop;
 
-    // Show scroll-down button only near top
     this.showScrollDownButton = scrollY < 50;
-
-    // Show scroll-to-top button only when user scrolls down
     this.showScrollToTopButton = scrollY > 200;
+  }
+
+  downloadResume(): void {
+    const url = 'assets/images/Vivek Resume.pdf';
+    const newTab = window.open(url, '_blank');
+
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Vivek Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   }
 }
