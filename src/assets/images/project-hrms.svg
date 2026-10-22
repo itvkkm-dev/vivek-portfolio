@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" fill="none">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="800" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#101f28"/><stop offset="1" stop-color="#070d12"/></linearGradient><linearGradient id="card" x1="190" y1="70" x2="750" y2="410" gradientUnits="userSpaceOnUse"><stop stop-color="#10212a"/><stop offset="1" stop-color="#0b151b"/></linearGradient></defs>
+  <path fill="url(#bg)" d="M0 0h800v440H0z"/><circle cx="690" cy="43" r="140" fill="#85bd53" opacity=".08"/>
+  <rect x="29" y="26" width="742" height="388" rx="13" fill="#060b0f" stroke="#577168" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M29 67h742" stroke="#435652" stroke-opacity=".55"/><circle cx="49" cy="47" r="5" fill="#f2796a"/><circle cx="66" cy="47" r="5" fill="#e6c55a"/><circle cx="83" cy="47" r="5" fill="#88c96a"/>
+  <rect x="45" y="87" width="145" height="309" rx="8" fill="#0d191e"/><rect x="60" y="103" width="87" height="10" rx="5" fill="#d5e0d8"/>
+  <circle cx="71" cy="149" r="13" fill="#c7f344"/><path d="M65 149h12m-6-6v12" stroke="#0b1515" stroke-width="2"/>
+  <path d="M94 145h62M62 184h88M62 218h74M62 252h85M62 286h66M62 320h82M62 354h69" stroke="#687b79" stroke-opacity=".5" stroke-width="6" stroke-linecap="round"/>
+  <rect x="210" y="88" width="535" height="94" rx="9" fill="url(#card)" stroke="#324844"/>
+  <text x="231" y="119" fill="#dfe9df" font-family="Arial,sans-serif" font-size="20" font-weight="700">People Overview</text><text x="231" y="143" fill="#849995" font-family="Arial,sans-serif" font-size="12">Your team at a glance</text>
+  <rect x="572" y="105" width="145" height="34" rx="17" fill="#c7f344"/><text x="595" y="127" fill="#111a10" font-family="Arial,sans-serif" font-size="12" font-weight="700">+ Add employee</text>
+  <g><rect x="210" y="198" width="124" height="76" rx="8" fill="#101f25" stroke="#344c46"/><rect x="348" y="198" width="124" height="76" rx="8" fill="#101f25" stroke="#344c46"/><rect x="486" y="198" width="124" height="76" rx="8" fill="#101f25" stroke="#344c46"/><rect x="624" y="198" width="121" height="76" rx="8" fill="#101f25" stroke="#344c46"/></g>
+  <text x="225" y="222" fill="#91a39b" font-family="Arial,sans-serif" font-size="11">TEAM MEMBERS</text><text x="225" y="254" fill="#c7f344" font-family="Arial,sans-serif" font-size="24" font-weight="700">248</text>
+  <text x="363" y="222" fill="#91a39b" font-family="Arial,sans-serif" font-size="11">ON LEAVE</text><text x="363" y="254" fill="#e9ca70" font-family="Arial,sans-serif" font-size="24" font-weight="700">12</text>
+  <text x="501" y="222" fill="#91a39b" font-family="Arial,sans-serif" font-size="11">OPEN ROLES</text><text x="501" y="254" fill="#8cd5d1" font-family="Arial,sans-serif" font-size="24" font-weight="700">08</text>
+  <text x="638" y="222" fill="#91a39b" font-family="Arial,sans-serif" font-size="11">ATTENDANCE</text><text x="638" y="254" fill="#b4d8ff" font-family="Arial,sans-serif" font-size="24" font-weight="700">96%</text>
+  <rect x="210" y="291" width="323" height="105" rx="8" fill="#0d191e" stroke="#314641"/><text x="228" y="314" fill="#dbe6dd" font-family="Arial,sans-serif" font-size="13" font-weight="700">Team attendance</text>
+  <path d="M229 367h282M242 355l41-18 42 9 40-28 43 14 43-34 41 18" stroke="#b8ed58" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M242 355l41-18 42 9 40-28 43 14 43-34 41 18v51H242v-12Z" fill="#b8ed58" opacity=".08"/>
+  <rect x="547" y="291" width="198" height="105" rx="8" fill="#0d191e" stroke="#314641"/><text x="564" y="314" fill="#dbe6dd" font-family="Arial,sans-serif" font-size="13" font-weight="700">Recent team</text>
+  <circle cx="575" cy="341" r="9" fill="#386e67"/><circle cx="575" cy="369" r="9" fill="#756446"/><path d="M592 339h126M592 346h83M592 367h126M592 374h93" stroke="#758680" stroke-opacity=".65" stroke-width="4" stroke-linecap="round"/>
+</svg>

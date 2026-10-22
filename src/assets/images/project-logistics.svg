@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" fill="none">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="800" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#0d2029"/><stop offset="1" stop-color="#071016"/></linearGradient><linearGradient id="map" x1="271" y1="88" x2="753" y2="397" gradientUnits="userSpaceOnUse"><stop stop-color="#132a31"/><stop offset="1" stop-color="#0a161c"/></linearGradient></defs>
+  <path fill="url(#bg)" d="M0 0h800v440H0z"/><path d="M0 361 181 210l125 80 150-170 147 95 197-161v386H0v-79Z" fill="#16302c" opacity=".36"/>
+  <rect x="28" y="26" width="744" height="388" rx="13" fill="#060b0f" stroke="#56726d" stroke-opacity=".55" stroke-width="2"/><path d="M28 67h744" stroke="#435652" stroke-opacity=".55"/>
+  <circle cx="48" cy="47" r="5" fill="#f2796a"/><circle cx="65" cy="47" r="5" fill="#e6c55a"/><circle cx="82" cy="47" r="5" fill="#88c96a"/>
+  <rect x="44" y="88" width="171" height="308" rx="8" fill="#0d191e"/><text x="61" y="116" fill="#e4ece4" font-family="Arial,sans-serif" font-size="16" font-weight="700">Fleet status</text>
+  <rect x="59" y="133" width="141" height="46" rx="6" fill="#10242a"/><circle cx="77" cy="156" r="8" fill="#a4df55"/><text x="94" y="153" fill="#dce6de" font-family="Arial,sans-serif" font-size="11">In transit</text><text x="94" y="168" fill="#92a49d" font-family="Arial,sans-serif" font-size="10">24 shipments</text>
+  <rect x="59" y="188" width="141" height="46" rx="6" fill="#10242a"/><circle cx="77" cy="211" r="8" fill="#e6bf61"/><text x="94" y="208" fill="#dce6de" font-family="Arial,sans-serif" font-size="11">Pending</text><text x="94" y="223" fill="#92a49d" font-family="Arial,sans-serif" font-size="10">08 shipments</text>
+  <rect x="59" y="243" width="141" height="46" rx="6" fill="#10242a"/><circle cx="77" cy="266" r="8" fill="#68c9be"/><text x="94" y="263" fill="#dce6de" font-family="Arial,sans-serif" font-size="11">Delivered</text><text x="94" y="278" fill="#92a49d" font-family="Arial,sans-serif" font-size="10">126 shipments</text>
+  <path d="M60 316h137M60 346h100M60 376h125" stroke="#5b706d" stroke-opacity=".55" stroke-width="5" stroke-linecap="round"/>
+  <rect x="232" y="88" width="523" height="308" rx="8" fill="url(#map)" stroke="#314a46"/>
+  <path d="M260 115c73 35 82 103 158 104 70 0 99-74 157-57 69 20 46 88 149 108M281 367c26-83 67-84 123-107 65-27 99 4 142-39 46-46 66-71 164-81M248 232c65-16 88 36 158 17 49-14 78-74 131-71 55 3 85 55 185 27M376 99c-12 58 25 82 11 141-12 49-44 75-28 147" stroke="#6c8e7f" stroke-opacity=".31" stroke-width="12" stroke-linecap="round"/>
+  <path d="M294 331c55-15 69-92 133-87 60 5 77-87 142-88 55-1 67 47 126 56" stroke="#c7f344" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 8"/>
+  <circle cx="294" cy="331" r="12" fill="#c7f344"/><circle cx="569" cy="156" r="12" fill="#82d6c5"/><circle cx="695" cy="212" r="12" fill="#dfb85d"/>
+  <path d="M289 327v-9c0-4 3-7 7-7h8l8 8v8h-23Zm7-13v8h13m-13 5a4 4 0 1 0 8 0m12 0a4 4 0 1 0 8 0" stroke="#0a1714" stroke-width="2"/>
+  <rect x="514" y="101" width="184" height="36" rx="18" fill="#102027" stroke="#58746c"/><circle cx="535" cy="119" r="5" fill="#c7f344"/><text x="550" y="123" fill="#deeadf" font-family="Arial,sans-serif" font-size="11">Live route · Truck 08</text>
+</svg>

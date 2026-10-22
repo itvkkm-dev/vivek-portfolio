@@ -1,10 +1,16 @@
+<button class="menu-backdrop" [class.open]="menuOpen" type="button" aria-label="Close navigation menu"
+    [attr.tabindex]="menuOpen ? 0 : -1" (click)="closeMenu()"></button>
 <header class="site-header">
     <div class="header-inner">
-        <a class="brand" href="#home" (click)="closeMenu()">Vivek</a>
+        <a class="brand" href="#home" (click)="closeMenu()"><span>VK</span> Vivek Kumar</a>
         <button class="nav-toggle" type="button" aria-label="Toggle navigation" [attr.aria-expanded]="menuOpen"
-            aria-controls="primary-navigation" (click)="toggleMenu()">{{ menuOpen ? 'Close' : 'Menu' }}</button>
+            aria-controls="primary-navigation" (click)="toggleMenu()">
+            <span aria-hidden="true">{{ menuOpen ? '×' : '☰' }}</span>
+            <span class="sr-only">{{ menuOpen ? 'Close' : 'Open' }} navigation</span>
+        </button>
         <nav id="primary-navigation" class="site-nav" [class.open]="menuOpen" aria-label="Main navigation">
             <ul>
+                <li><a href="#home" (click)="closeMenu()">Home</a></li>
                 <li><a href="#about" (click)="closeMenu()">About</a></li>
                 <li><a href="#skills" (click)="closeMenu()">Skills</a></li>
                 <li><a href="#experience" (click)="closeMenu()">Experience</a></li>
@@ -13,7 +19,7 @@
                 <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
             </ul>
             <a class="nav-resume" href="assets/images/Vivek_Resume.pdf" download="Vivek-Kumar-Resume.pdf"
-                (click)="closeMenu()">Download Resume <span aria-hidden="true">&#8599;</span></a>
+                (click)="closeMenu()"><span aria-hidden="true">↓</span> Resume</a>
         </nav>
     </div>
 </header>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" fill="none">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="800" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#10202a"/><stop offset="1" stop-color="#070e14"/></linearGradient><linearGradient id="card" x1="503" y1="79" x2="716" y2="384" gradientUnits="userSpaceOnUse"><stop stop-color="#18333a"/><stop offset="1" stop-color="#0b181d"/></linearGradient></defs>
+  <path fill="url(#bg)" d="M0 0h800v440H0z"/><circle cx="648" cy="111" r="196" fill="#24bca2" opacity=".07"/>
+  <rect x="29" y="26" width="742" height="388" rx="13" fill="#060b0f" stroke="#547068" stroke-opacity=".55" stroke-width="2"/><path d="M29 67h742" stroke="#435652" stroke-opacity=".55"/>
+  <circle cx="49" cy="47" r="5" fill="#f2796a"/><circle cx="66" cy="47" r="5" fill="#e6c55a"/><circle cx="83" cy="47" r="5" fill="#88c96a"/>
+  <rect x="46" y="87" width="438" height="309" rx="9" fill="#0c181d" stroke="#314641"/>
+  <text x="70" y="119" fill="#dfe9e1" font-family="Arial,sans-serif" font-size="17" font-weight="700">Your account, made simple</text><text x="70" y="141" fill="#8da098" font-family="Arial,sans-serif" font-size="11">A smarter way to save and manage money.</text>
+  <rect x="70" y="163" width="389" height="83" rx="8" fill="#12262c" stroke="#37534c"/>
+  <text x="89" y="187" fill="#9bad9f" font-family="Arial,sans-serif" font-size="10">TOTAL SAVINGS</text><text x="89" y="222" fill="#f0f3e9" font-family="Arial,sans-serif" font-size="28" font-weight="700">₹ 2,48,500</text>
+  <rect x="356" y="181" width="83" height="27" rx="14" fill="#c7f344" fill-opacity=".15"/><text x="371" y="199" fill="#c7f344" font-family="Arial,sans-serif" font-size="10">+ 8.4%</text>
+  <text x="70" y="274" fill="#dce6de" font-family="Arial,sans-serif" font-size="13" font-weight="700">Recent activity</text>
+  <path d="M70 292h389M70 326h389M70 360h389" stroke="#2c403e" stroke-width="1"/>
+  <circle cx="88" cy="309" r="9" fill="#1f4b3c"/><path d="M84 309h8m-4-4v8" stroke="#c7f344" stroke-width="1.5"/><text x="107" y="306" fill="#dbe5dd" font-family="Arial,sans-serif" font-size="11">Monthly deposit</text><text x="107" y="320" fill="#80928a" font-family="Arial,sans-serif" font-size="9">Today · Savings</text><text x="393" y="313" fill="#c7f344" font-family="Arial,sans-serif" font-size="11">+ ₹ 10,000</text>
+  <circle cx="88" cy="343" r="9" fill="#193e42"/><path d="M84 343h8m-4-4v8" stroke="#69cbc0" stroke-width="1.5"/><text x="107" y="340" fill="#dbe5dd" font-family="Arial,sans-serif" font-size="11">Interest credited</text><text x="107" y="354" fill="#80928a" font-family="Arial,sans-serif" font-size="9">Yesterday · Account</text><text x="399" y="347" fill="#75d6c7" font-family="Arial,sans-serif" font-size="11">+ ₹ 1,840</text>
+  <rect x="508" y="87" width="237" height="309" rx="9" fill="url(#card)" stroke="#3d6259"/>
+  <circle cx="626" cy="162" r="42" fill="#183f39"/><circle cx="626" cy="162" r="31" fill="#1c5147"/><path d="M626 143v38m-12-27h18a7 7 0 0 1 0 14h-14a7 7 0 0 0 0 14h20" stroke="#c7f344" stroke-width="4" stroke-linecap="round"/>
+  <text x="566" y="226" fill="#93a99e" font-family="Arial,sans-serif" font-size="11">CURRENT ACCOUNT</text><text x="554" y="252" fill="#f0f3e9" font-family="Arial,sans-serif" font-size="18" font-weight="700">••••  ••••  2841</text>
+  <rect x="536" y="276" width="181" height="53" rx="6" fill="#0e1e22"/><text x="553" y="297" fill="#91a49b" font-family="Arial,sans-serif" font-size="10">ACCOUNT STATUS</text><circle cx="561" cy="314" r="4" fill="#a9e952"/><text x="573" y="318" fill="#dbe5dd" font-family="Arial,sans-serif" font-size="11">Active and secure</text>
+  <rect x="536" y="343" width="181" height="31" rx="16" fill="#c7f344"/><text x="579" y="363" fill="#101810" font-family="Arial,sans-serif" font-size="11" font-weight="700">View account</text>
+</svg>

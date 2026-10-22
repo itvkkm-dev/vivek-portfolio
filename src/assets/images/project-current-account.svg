@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" fill="none">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="800" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#10262d"/><stop offset="1" stop-color="#080f15"/></linearGradient><linearGradient id="panel" x1="246" y1="59" x2="584" y2="400" gradientUnits="userSpaceOnUse"><stop stop-color="#13252d"/><stop offset="1" stop-color="#0b171d"/></linearGradient></defs>
+  <path fill="url(#bg)" d="M0 0h800v440H0z"/><circle cx="144" cy="315" r="181" fill="#27a790" opacity=".08"/>
+  <rect x="31" y="25" width="738" height="390" rx="13" fill="#060b10" stroke="#54736a" stroke-opacity=".55" stroke-width="2"/><path d="M31 67h738" stroke="#435652" stroke-opacity=".55"/>
+  <circle cx="51" cy="46" r="5" fill="#f2796a"/><circle cx="68" cy="46" r="5" fill="#e6c55a"/><circle cx="85" cy="46" r="5" fill="#88c96a"/>
+  <rect x="53" y="88" width="196" height="307" rx="8" fill="#0d191e"/><text x="73" y="119" fill="#e3ece4" font-family="Arial,sans-serif" font-size="16" font-weight="700">Start your journey</text>
+  <text x="73" y="146" fill="#8da09a" font-family="Arial,sans-serif" font-size="11">A few steps to your new account</text>
+  <path d="M85 186v148" stroke="#536b62" stroke-width="2"/>
+  <circle cx="85" cy="190" r="12" fill="#c7f344"/><path d="m80 190 4 4 7-8" stroke="#101811" stroke-width="2"/>
+  <circle cx="85" cy="237" r="12" fill="#1b3437" stroke="#66c7b1" stroke-width="2"/><text x="81" y="241" fill="#9ce0c7" font-family="Arial,sans-serif" font-size="10">2</text>
+  <circle cx="85" cy="284" r="12" fill="#172a2e" stroke="#465f5d" stroke-width="2"/><text x="81" y="288" fill="#9aada5" font-family="Arial,sans-serif" font-size="10">3</text>
+  <circle cx="85" cy="331" r="12" fill="#172a2e" stroke="#465f5d" stroke-width="2"/><text x="81" y="335" fill="#9aada5" font-family="Arial,sans-serif" font-size="10">4</text>
+  <text x="109" y="187" fill="#dce6dd" font-family="Arial,sans-serif" font-size="12">Personal details</text><text x="109" y="202" fill="#81948e" font-family="Arial,sans-serif" font-size="10">Completed</text>
+  <text x="109" y="234" fill="#dce6dd" font-family="Arial,sans-serif" font-size="12">Verify identity</text><text x="109" y="249" fill="#81948e" font-family="Arial,sans-serif" font-size="10">Current step</text>
+  <text x="109" y="281" fill="#aebdb4" font-family="Arial,sans-serif" font-size="12">Video KYC</text><text x="109" y="296" fill="#71837c" font-family="Arial,sans-serif" font-size="10">Next step</text>
+  <text x="109" y="328" fill="#aebdb4" font-family="Arial,sans-serif" font-size="12">Initial deposit</text><text x="109" y="343" fill="#71837c" font-family="Arial,sans-serif" font-size="10">Final step</text>
+  <rect x="272" y="88" width="465" height="307" rx="8" fill="url(#panel)" stroke="#334a46"/>
+  <text x="307" y="128" fill="#c7f344" font-family="Arial,sans-serif" font-size="11" font-weight="700">STEP 2 OF 4</text><text x="307" y="162" fill="#eef3ed" font-family="Arial,sans-serif" font-size="22" font-weight="700">Verify your identity</text>
+  <text x="307" y="187" fill="#98aaa2" font-family="Arial,sans-serif" font-size="12">Enter your details as they appear on your documents.</text>
+  <rect x="307" y="213" width="395" height="54" rx="6" fill="#0b1519" stroke="#49625c"/><text x="324" y="233" fill="#789088" font-family="Arial,sans-serif" font-size="10">PAN NUMBER</text><text x="324" y="252" fill="#e2ebe3" font-family="Arial,sans-serif" font-size="14">ABCDE 1234 F</text>
+  <rect x="307" y="281" width="395" height="54" rx="6" fill="#0b1519" stroke="#49625c"/><text x="324" y="301" fill="#789088" font-family="Arial,sans-serif" font-size="10">DATE OF BIRTH</text><text x="324" y="320" fill="#e2ebe3" font-family="Arial,sans-serif" font-size="14">DD / MM / YYYY</text>
+  <rect x="307" y="351" width="153" height="29" rx="15" fill="#c7f344"/><text x="329" y="370" fill="#101810" font-family="Arial,sans-serif" font-size="11" font-weight="700">Continue securely  →</text>
+  <path d="M642 105h58" stroke="#c7f344" stroke-opacity=".4" stroke-width="3" stroke-linecap="round"/>
+</svg>

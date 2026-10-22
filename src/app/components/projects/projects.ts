@@ -10,6 +10,7 @@ export class Projects {
     {
       title: 'HRMS - Human Resource Management System',
       company: 'IoT India Pvt Ltd',
+      image: 'assets/images/project-hrms.svg',
       description:
         'HRMS platform for employee onboarding, profiles, attendance, leave approvals, and payroll workflows.',
       highlights: [
@@ -22,6 +23,7 @@ export class Projects {
     {
       title: 'Logistics Management System',
       company: 'IoT India Pvt Ltd',
+      image: 'assets/images/project-logistics.svg',
       description:
         'Operations application for order management, shipment tracking, dispatch, and delivery performance.',
       highlights: [
@@ -34,6 +36,7 @@ export class Projects {
     {
       title: 'Current Account - Sole Proprietorship and Individual Journey',
       company: 'Decimal Technologies Pvt Ltd',
+      image: 'assets/images/project-current-account.svg',
       description:
         'Digital current account opening platform supporting customer onboarding through initial deposit.',
       highlights: [
@@ -46,6 +49,7 @@ export class Projects {
     {
       title: 'Open Saving Account Platform',
       company: 'Decimal Technologies Pvt Ltd',
+      image: 'assets/images/project-savings.svg',
       description:
         'Digital savings account onboarding journey from lead capture through account activation.',
       highlights: [
@@ -59,6 +63,7 @@ export class Projects {
     {
       title: 'Bank Leads Management System',
       company: 'Decimal Technologies Pvt Ltd',
+      image: 'assets/images/project-leads.svg',
       description: 'Centralized lead management platform for bank sales teams and administrators.',
       highlights: [
         'Lead capture, assignment, tracking, and closure.',

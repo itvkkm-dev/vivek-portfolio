@@ -20,4 +20,13 @@ describe('Navbar', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should close the mobile menu when the backdrop is tapped', () => {
+    component.menuOpen = true;
+    fixture.detectChanges();
+
+    fixture.nativeElement.querySelector('.menu-backdrop').click();
+
+    expect(component.menuOpen).toBeFalse();
+  });
 });
