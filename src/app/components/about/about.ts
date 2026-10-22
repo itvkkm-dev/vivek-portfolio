@@ -6,7 +6,4 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
   templateUrl: './about.html',
   styleUrls: ['./about.scss'],
 })
-export class About implements OnInit, AfterViewInit {
-  ngOnInit(): void {}
-  ngAfterViewInit(): void {}
-}
+export class About {}

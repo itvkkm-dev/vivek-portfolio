@@ -1,36 +1,19 @@
-<header class="app-header">
-    <!-- Username Section -->
-    <div class="username">
-        <i class="fas fa-user-circle"></i>
-        <span>Vivek Kumar</span>
+<header class="site-header">
+    <div class="header-inner">
+        <a class="brand" href="#home" (click)="closeMenu()">Vivek</a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" [attr.aria-expanded]="menuOpen"
+            aria-controls="primary-navigation" (click)="toggleMenu()">{{ menuOpen ? 'Close' : 'Menu' }}</button>
+        <nav id="primary-navigation" class="site-nav" [class.open]="menuOpen" aria-label="Main navigation">
+            <ul>
+                <li><a href="#about" (click)="closeMenu()">About</a></li>
+                <li><a href="#skills" (click)="closeMenu()">Skills</a></li>
+                <li><a href="#experience" (click)="closeMenu()">Experience</a></li>
+                <li><a href="#projects" (click)="closeMenu()">Projects</a></li>
+                <li><a href="#education" (click)="closeMenu()">Education</a></li>
+                <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
+            </ul>
+            <a class="nav-resume" href="assets/images/Vivek_Kumar_Resume.pdf" download="Vivek-Kumar-Resume.pdf"
+                (click)="closeMenu()">Download Resume <span aria-hidden="true">&#8599;</span></a>
+        </nav>
     </div>
-
-    <!-- Hamburger Toggle (only visible on small screens) -->
-    <div class="hamburger" (click)="toggleMenu()">
-        <i class="fas" [ngClass]="menuOpen ? 'fa-times' : 'fa-bars'"></i>
-    </div>
-
-    <!-- Nav Menu (responsive) -->
-    <nav class="menu" [class.open]="menuOpen">
-        <ul>
-            <li [class.active]="activeSection === 'hero'" (click)="scrollTo('hero')">
-                <i class="fas fa-home"></i> Home
-            </li>
-            <li [class.active]="activeSection === 'about'" (click)="scrollTo('about')">
-                <i class="fas fa-user"></i> About
-            </li>
-            <li [class.active]="activeSection === 'skills'" (click)="scrollTo('skills')">
-                <i class="fas fa-cogs"></i> Skills
-            </li>
-            <li [class.active]="activeSection === 'experience'" (click)="scrollTo('experience')">
-                <i class="fas fa-briefcase"></i> Experience
-            </li>
-            <li [class.active]="activeSection === 'projects'" (click)="scrollTo('projects')">
-                <i class="fas fa-project-diagram"></i> Projects
-            </li>
-            <li [class.active]="activeSection === 'contact'" (click)="scrollTo('contact')">
-                <i class="fas fa-envelope"></i> Contact
-            </li>
-        </ul>
-    </nav>
 </header>

@@ -14,10 +14,13 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', () => {
+  it('should render the portfolio sections', () => {
     const fixture = TestBed.createComponent(App);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, vivek-portfolio');
+    expect(compiled.querySelector('h1')?.getAttribute('aria-label')).toBe('Vivek Kumar');
+    ['about', 'skills', 'experience', 'projects', 'education', 'contact'].forEach((section) => {
+      expect(compiled.querySelector(`#${section}`)).not.toBeNull();
+    });
   });
 });

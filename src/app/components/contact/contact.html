@@ -1,66 +1,18 @@
-<div class="contact-page-wrapper">
-    <div class="contact-page">
-        <h2 class="section-title">
-            <i class="fas fa-paper-plane"></i> Let's Connect
-        </h2>
-
-        <div class="contact-methods">
-            <!-- WhatsApp -->
-            <a [href]="whatsappLink" target="_blank" class="contact-link whatsapp" rel="noopener noreferrer">
-                <i class="fab fa-whatsapp"></i>
-                <span>WhatsApp</span>
-            </a>
-
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/vivek-kumar-252329273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                target="_blank" class="contact-link linkedin" rel="noopener noreferrer">
-                <i class="fab fa-linkedin"></i>
-                <span>LinkedIn</span>
-            </a>
+<section id="contact" class="contact-section" aria-labelledby="contact-title">
+    <div class="section-inner">
+        <p class="section-kicker">GET IN TOUCH</p>
+        <h2 id="contact-title" class="contact-title">Let's build what comes next.</h2>
+        <p class="contact-intro">I welcome conversations with recruiters and engineering teams about building
+            thoughtful, reliable software.</p>
+        <div class="contact-links">
+            <a href="mailto:it.vkkm@gmail.com">it.vkkm@gmail.com</a>
+            <a href="tel:+917310998140">+91 7310998140</a>
+            <a href="https://www.linkedin.com/in/vivek-kumar-252329273/" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a>
         </div>
-
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate class="contact-form">
-
-            <!-- Name Field -->
-            <div class="form-group">
-                <input type="text" formControlName="name" placeholder="Full Name*" />
-                <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid" class="error-msg">
-                    Name is <strong>required</strong>.
-                </div>
-            </div>
-
-            <!-- Subject Field -->
-            <div class="form-group">
-                <input type="text" formControlName="subject" placeholder="Subject*" />
-                <div *ngIf="contactForm.get('subject')?.touched && contactForm.get('subject')?.invalid"
-                    class="error-msg">
-                    Subject is <strong>required</strong>.
-                </div>
-            </div>
-
-            <!-- Message Field -->
-            <div class="form-group">
-                <textarea formControlName="message" placeholder="Your Message*" rows="5"></textarea>
-                <div *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid"
-                    class="error-msg">
-                    Message is <strong>required</strong>.
-                </div>
-            </div>
-
-            <!-- Submit Button -->
-            <button type="submit" [disabled]="contactForm.invalid" class="submit-btn">
-                <i class="fas fa-envelope"></i>
-                <span>Send Email</span>
-            </button>
-        </form>
     </div>
-</div>
-
-<footer class="footer">
-    <div class="footer-content">
-        <p>
-            Made with <span class="heart">♥</span> by <strong>Vivek</strong>
-        </p>
-        <p>&copy; {{ currentYear }} All rights reserved.</p>
-    </div>
+</section>
+<footer class="site-footer">
+    <p>Vivek Kumar | Software Engineer</p>
+    <p>&copy; {{ currentYear }} Vivek Kumar</p>
 </footer>

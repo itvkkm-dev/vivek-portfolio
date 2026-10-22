@@ -1,11 +1,31 @@
-<div class="app-layout">
-    <app-navbar></app-navbar>
-    <main class="main-content">
-        <div id="hero"><app-hero></app-hero></div>
-        <div id="about"><app-about></app-about></div>
-        <div id="skills"><app-skills></app-skills></div>
-        <div id="experience"><app-experience></app-experience></div>
-        <div id="projects"><app-projects></app-projects></div>
-        <div id="contact"><app-contact></app-contact></div>
-    </main>
-</div>
+<app-navbar></app-navbar>
+<main class="page-content">
+    <app-hero></app-hero>
+    <app-about></app-about>
+    <app-skills></app-skills>
+    <app-experience></app-experience>
+    <app-projects></app-projects>
+    <section id="education" class="portfolio-section education-section" aria-labelledby="education-title">
+        <div class="section-inner">
+            <p class="section-kicker">ACADEMIC BACKGROUND</p>
+            <h2 id="education-title" class="portfolio-title">Education</h2>
+            <div class="education-list">
+                <article class="education-item">
+                    <div>
+                        <h3>Master of Computer Applications</h3>
+                        <p>Dr. APJ Abdul Kalam Technical University, Lucknow</p>
+                    </div>
+                    <span>2018 - 2021</span>
+                </article>
+                <article class="education-item">
+                    <div>
+                        <h3>Bachelor of Computer Applications</h3>
+                        <p>Chaudhary Charan Singh University, Meerut</p>
+                    </div>
+                    <span>2015 - 2018</span>
+                </article>
+            </div>
+        </div>
+    </section>
+    <app-contact></app-contact>
+</main>

@@ -1,32 +1,25 @@
-<div class="profile-container">
-    <div class="glass-card" data-aos="slide-right" data-aos-duration="800">
-
-        <div class="avatar-ring" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/images/vivek.jpeg" alt="Vivek" class="profile-img" />
+<section id="home" class="hero-section" aria-labelledby="hero-title">
+    <div class="hero-copy">
+        <p class="hero-eyebrow">Software Engineer <span>/</span> Full Stack Developer</p>
+        <h1 id="hero-title" class="hero-title" aria-label="Vivek Kumar"><span>Vivek</span><span>Kumar</span></h1>
+        <p class="hero-role">Building dependable digital products.</p>
+        <p class="hero-summary">Building scalable web applications and secure digital experiences across banking,
+            fintech, HRMS, and logistics.</p>
+        <p class="hero-support">4+ years of experience building enterprise applications with Angular, TypeScript,
+            Next.js, Node.js, and PostgreSQL.</p>
+        <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore My Work</a>
+            <a class="button button-secondary" href="#contact">Contact Me</a>
+            <a class="button button-secondary" href="assets/images/Vivek_Kumar_Resume.pdf"
+                download="Vivek-Kumar-Resume.pdf">Download Resume</a>
         </div>
-
-        <h2 class="name" data-aos="fade-right" data-aos-delay="200">Vivek</h2>
-        <p class="role" data-aos="fade-up-right" data-aos-delay="300">Software Engineer</p>
-
-        <p class="bio" data-aos="fade-right" data-aos-delay="400">
-            Delivering exceptional user experiences by leveraging Angular, TypeScript, and advanced UI design
-            methodologies.
-        </p>
-
-        <a (click)="downloadResume()" class="download-btn" data-aos="fade-right" data-aos-delay="500">
-            <i class="fas fa-download me-2"></i> Download Resume
-        </a>
-
+        <div class="hero-stack" aria-label="Core technologies">
+            <span>Angular</span><span>TypeScript</span><span>Next.js</span><span>Node.js</span><span>PostgreSQL</span>
+        </div>
     </div>
-
-    <!-- Scroll Down Button -->
-    <button *ngIf="showScrollDownButton" class="scroll-down-btn" (click)="scrollToSection('about')" title="Scroll Down">
-        <i class="fas fa-chevron-down"></i>
-        <span>Scroll Down</span>
-    </button>
-
-    <!-- Scroll To Top Button -->
-    <button *ngIf="showScrollToTopButton" class="scroll-to-top-btn" (click)="scrollToTop()" title="Scroll To Top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-</div>
+    <div class="hero-portrait-wrap">
+        <img class="hero-portrait" src="assets/images/vivek.jpeg" alt="Portrait of Vivek Kumar" width="372" height="465"
+            fetchpriority="high">
+        <div class="portrait-caption"><span>Based in India</span><span>4+ years in software</span></div>
+    </div>
+</section>
