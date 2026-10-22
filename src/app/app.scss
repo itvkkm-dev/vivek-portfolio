@@ -4,12 +4,12 @@
 }
 
 .page-content {
-  width: min(100% - 48px, 1120px);
+  width: min(100% - 48px, 1600px);
   margin-inline: auto;
 }
 
 @media (max-width: 640px) {
   .page-content {
-    width: min(100% - 36px, 1120px);
+    width: min(100% - 8px, 1600px);
   }
 }

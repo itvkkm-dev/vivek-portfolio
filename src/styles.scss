@@ -13,7 +13,7 @@
   --wash: #e5ece5;
   --surface: #0d1a24;
   --surface-raised: #122330;
-  --content-width: 1120px;
+  --content-width: 1600px;
   --section-space: clamp(58px, 6vw, 78px);
   --panel-inset: clamp(16px, 3vw, 40px);
   --heading-space: clamp(24px, 2.7vw, 30px);
@@ -2457,7 +2457,7 @@ a {
   --wash: #081113;
   --surface: #091416;
   --surface-raised: #0d1b1c;
-  --content-width: 1120px;
+  --content-width: 1600px;
   --section-space: clamp(58px, 7vw, 88px);
   --panel-inset: clamp(20px, 4vw, 54px);
   --heading-space: 18px;
@@ -4040,6 +4040,35 @@ body {
   color: #d1dce5;
   font-size: 9px;
   text-align: left;
+}
+
+@media (max-width: 680px) {
+  :root {
+    --panel-inset: 6px;
+  }
+
+  .header-inner,
+  .page-content,
+  .site-footer {
+    width: calc(100% - 8px);
+  }
+
+  .site-nav {
+    right: 4px;
+    left: 4px;
+  }
+
+  .hero-section {
+    padding-inline: 6px;
+  }
+
+  .contact-section {
+    padding: 30px 8px;
+  }
+
+  .site-footer {
+    padding: 17px 4px 21px;
+  }
 }
 
 @media (max-width: 760px) {
