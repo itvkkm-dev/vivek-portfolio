@@ -5,6 +5,7 @@
         <p class="skills-summary">I work with modern tools and technologies to build clean, scalable and high-performance applications.</p>
         <div class="skill-groups-grid">
             @for (category of categories; track category.title) {
+            @if (category.title !== 'Core Competencies') {
             <article class="skill-group">
                 <h3>{{ category.title }}</h3>
                 <div class="skill-tags">
@@ -24,6 +25,29 @@
                 </div>
             </article>
             }
+            }
         </div>
+        @for (category of categories; track category.title) {
+        @if (category.title === 'Core Competencies') {
+        <article class="skill-group skill-group-core">
+            <h3>{{ category.title }}</h3>
+            <div class="skill-tags">
+                @for (skill of category.skills; track skill) {
+                @let icon = getSkillIcon(skill);
+                <div class="skill-tag skill-tag-competency">
+                    <span class="skill-icon" [style.--skill-color]="icon.color" aria-hidden="true">
+                        @if (icon.className) {
+                        <i [class]="icon.className"></i>
+                        } @else {
+                        <span>{{ icon.label }}</span>
+                        }
+                    </span>
+                    <span class="skill-name">{{ skill }}</span>
+                </div>
+                }
+            </div>
+        </article>
+        }
+        }
     </div>
 </section>
