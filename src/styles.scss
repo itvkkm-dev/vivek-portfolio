@@ -130,26 +130,6 @@ a {
   color: var(--signal);
 }
 
-.site-nav .nav-resume {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 9px 12px;
-  border: 1px solid rgba(120, 215, 209, 0.52);
-  color: var(--signal);
-  font-size: 11px;
-  letter-spacing: 0.4px;
-}
-
-.site-nav .nav-resume:hover {
-  background: var(--signal);
-  color: #111a18;
-}
-
-.nav-resume span {
-  font-size: 15px;
-}
-
 .portfolio-section {
   padding: var(--section-space) var(--panel-inset);
   scroll-margin-top: 78px;
@@ -824,12 +804,6 @@ a {
   .site-nav a {
     display: block;
     padding: 10px 2px;
-  }
-
-  .site-nav .nav-resume {
-    width: fit-content;
-    margin-top: 14px;
-    padding-inline: 12px;
   }
 
   .hero-section {
@@ -2529,19 +2503,6 @@ body {
   color: var(--accent);
 }
 
-.site-nav .nav-resume {
-  gap: 7px;
-  padding: 8px 13px;
-  border-color: rgba(199, 243, 68, 0.64);
-  border-radius: 999px;
-  color: var(--accent);
-  font-size: 10px;
-}
-
-.nav-resume span {
-  font-size: 12px;
-}
-
 .nav-toggle {
   min-width: 40px;
   border-color: var(--line);
@@ -3525,12 +3486,6 @@ body {
     padding: 10px 2px;
   }
 
-  .site-nav .nav-resume {
-    display: inline-flex;
-    width: fit-content;
-    margin-top: 12px;
-  }
-
   .hero-section {
     min-height: auto;
     padding: 54px 20px 34px;
@@ -3553,6 +3508,37 @@ body {
 
   .hero-actions {
     margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .hero-actions .button {
+    min-width: 0;
+    padding-inline: 4px;
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+  .hero-actions .button span {
+    margin-left: 3px;
+    font-size: 11px;
+  }
+
+  @media (max-width: 360px) {
+    .hero-actions {
+      gap: 4px;
+    }
+
+    .hero-actions .button {
+      padding-inline: 2px;
+      font-size: 8px;
+    }
+
+    .hero-actions .button span {
+      margin-left: 2px;
+      font-size: 10px;
+    }
   }
 
   .hero-portrait-wrap {
